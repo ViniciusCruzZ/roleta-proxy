@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,13 +19,19 @@
             height: 100vh;
             text-align: center;
         }
-        header, footer {
+
+        header,
+        footer {
+            background-color: #470e34;
             width: 100%;
             padding: 1em 0;
         }
-        header h1, footer p {
+
+        header h1,
+        footer p {
             margin: 0;
         }
+
         iframe {
             border: 2px solid #FFFFFF;
             border-radius: 10px;
@@ -32,8 +39,25 @@
             max-width: 1200px;
             height: 70vh;
         }
+
+        @media (max-width: 600px) {
+            iframe {
+                height: 60vh;
+            }
+
+            header,
+            footer {
+                padding: 0.5em 0;
+            }
+
+            header h1,
+            footer p {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Bem-vindo à Roleta Grátis!</h1>
@@ -43,4 +67,5 @@
         <p>Divirta-se e boa sorte!</p>
     </footer>
 </body>
+
 </html>
